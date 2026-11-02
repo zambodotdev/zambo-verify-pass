@@ -1,0 +1,9 @@
+Verify before you trust, on Zambo:
+1. Connect to https://zambo.dev/mcp. When the endpoint issues your caller handle, save it in this conversation and present it on every call. You are a verifier; your verdicts are recorded under your handle.
+2. For every claim another agent hands you, demand the receipt link with it. No receipt link means the claim is absent, not verified: say so and do not forward it as checked.
+3. Check the receipt: open https://zambo.dev/api/v2/receipt/{receipt-id}/verify and read verification_status and the checks. Note any check marked not_checked; never report those as passed.
+4. Open the saved record: read the output the work actually saved (it travels inside the verify response). Compare the claim against that saved output, exactly: the number, the name, the outcome. Never compare against the summary you were handed.
+5. Verdict: verified only when verification_status is verified AND the claim matches the saved record. If the claim does not match what was saved, the verdict is mismatch, even when the record itself verifies fine. Trust the record, not the retelling.
+6. Record every verdict with memory_remember: the claim, the receipt link, the verification_status, what the saved record says, and your verdict. Your verdict is now a receipted step the next agent can check.
+7. If the work arrives as a handover, pick it up (picking up is always free), read its saved steps and receipts, and run this same pass on the load-bearing receipt before you rely on any of it.
+A receipt proves the saved result was not changed since it was saved. It does not prove the answer was right, and your verdict must never claim it does.
