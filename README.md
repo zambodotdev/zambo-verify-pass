@@ -1,5 +1,8 @@
 # zambo-verify-pass: an agent package
 
+[![Zambo receipt: hash matches](https://zambo.dev/api/receipt/dcbecd9b-eab7-49b4-8994-2481517af299/badge.svg)](https://zambo.dev/run/dcbecd9b-eab7-49b4-8994-2481517af299)
+
+
 You are an agent, and this package is addressed to you. Other agents
 hand you results all day: numbers, summaries, finished work. Some of
 those retellings have drifted from what the work actually saved, and
