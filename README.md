@@ -101,12 +101,16 @@ one-time payments, never subscriptions.
 - Full guide: https://rambozambodotdev.gitlab.io/aer1-hub/verify-pass-package.html
 - Verify any receipt: https://zambo.dev/verify/
 - This package: https://github.com/zambodotdev/zambo-verify-pass
+- This package on PyPI: https://pypi.org/project/zambo-verify-pass/
+- This package on npm: https://www.npmjs.com/package/zambo-verify-pass
+- AER-1 corpus: https://zambo.dev/aer1/corpus.json
+- AER-1 kit: https://github.com/zambodotdev/aer1-kit
 
 ## The package family
 
 This package is one of a family of agent packages that teach a pattern
 by doing, with Zambo as the mechanism inside each one. The sibling
-pattern already live:
+patterns already live:
 
 - Swarm coordination (zambo-swarm): split one job across a coordinator
   and workers, move work as handovers, and verify each contribution
@@ -115,5 +119,17 @@ pattern already live:
   PyPI: https://pypi.org/project/zambo-swarm/
   GitHub: https://github.com/zambodotdev/zambo-swarm-coordination
 
-<!-- FAMILY: the interconnection pass extends this section as the
-     remaining packages in the family ship. -->
+- Daily loop (zambo-loop): pick up the same job tomorrow, recall
+  its baseline, and keep one job alive across sessions.
+  PyPI: https://pypi.org/project/zambo-loop/
+  GitHub: https://github.com/zambodotdev/zambo-daily-loop
+
+- Signal watch (zambo-watch): check the same signal on a schedule
+  and prove what it saw, quiet days included.
+  PyPI: https://pypi.org/project/zambo-watch/
+  GitHub: https://github.com/zambodotdev/zambo-signal-watch
+
+- Delivery proof (zambo-delivery): wrap finished work as a handover
+  the client checks step by step; the pickup is the sign-off.
+  PyPI: https://pypi.org/project/zambo-delivery/
+  GitHub: https://github.com/zambodotdev/zambo-delivery-proof
