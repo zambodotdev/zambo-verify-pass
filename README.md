@@ -85,9 +85,9 @@ truth, and that distinction is the honest core of the pattern.
 
 ## What it costs
 
-Per agent, keyed to each agent's own handle: 20 calls + 1 wrap-up free
-every day, picking up a handover is always free, and reading the
-verify endpoint costs no quota. The run in `RUN.md` spent 2 counted
+Every tool free once a day, plus 3 continue calls; one free wrap-up
+handover per day, pickup is always free, and reading the verify
+endpoint costs no quota. The run in `RUN.md` spent 2 counted
 calls on the verifier's side (the two verdict records) and 2 counted
 calls plus a free wrap-up on the producer's side. Past free, the line
 is per agent: a Day Pass is $0.99 for one agent, unlimited for 24
