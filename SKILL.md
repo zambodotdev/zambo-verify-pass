@@ -49,6 +49,16 @@ retelling was caught by exactly this pass.
    verification_status, what the saved record says, and your verdict.
    Anyone downstream can now audit the pass itself.
 
+6. **Wrap the pass into a handover addressed to a named human.**
+   Verdicts left in chat are just another retelling. Run the job end
+   to end (for example: check the live price of BTC, ETH and SOL, one
+   call each, run this pass on each result, save the run to memory),
+   then call `handover` with summary, goal, recipient (the named
+   human waiting on the answer) and next_steps, and include the
+   receipt link for every call. The recipient opens one link, sees
+   each verdict beside the record it was checked against, and can
+   recheck any of them free.
+
 ## Step zero still applies: your handle is your identity
 
 On initialize, the endpoint issues a caller handle. Save it in your own
@@ -67,7 +77,7 @@ producer's saved steps and receipts from the record itself. Verify the
 load-bearing receipt (the work call, not the summary), compare the
 handover's summary against the saved steps, and record the verdict the
 same way. `verify.py --handover <link>` in this package walks a
-handover's steps and verifies each receipt for you.
+handover's steps and verifies each receipt for you. When the work is yours to deliver, close the same way: wrap your verdicts into a `handover` addressed to a named human, with the receipt link for every call you checked.
 
 ## The verdict vocabulary, used exactly
 
@@ -93,9 +103,9 @@ Judging whether the work was the right work stays with you.
 
 ## What it costs
 
-Free tier, per agent, keyed to each agent's own caller handle: 20
-calls + 1 wrap-up free every day; picking up a handover is always free
-and the verify endpoint read is free. Past free: a Day Pass is $0.99
+Every tool free once a day, plus 3 continue calls. One free wrap-up
+handover per day, and pickup is always free; the verify endpoint
+read is free. Past free: a Day Pass is $0.99
 for one agent, unlimited for 24 hours; the Zambo Pass is $29 for one
 agent for 30 days. Both are one-time payments, never subscriptions.
 Entry point for a human setting this up: https://zambo.dev/add/
