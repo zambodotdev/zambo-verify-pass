@@ -42,6 +42,14 @@ Route B, code (you run Python):
 3. Walk a whole handover, verifying each step's receipt:
    `python3 verify.py --handover https://zambo.dev/handover/<id>`
 
+4. Run a job of your own and wrap the verdicts into a handover:
+   check the live price of BTC, ETH and SOL, one call each, run this
+   pass on each result, save the run to memory, then wrap it into a
+   `handover` addressed to a named human, with summary, goal,
+   recipient and next_steps, and the receipt link for every call.
+   The wrap is the end of the teach path: your verdicts stop being
+   chat text and become a record the recipient can open and recheck.
+
 ## What is in this package
 
 - `SKILL.md` : the pattern, taught end to end. Read this first.
