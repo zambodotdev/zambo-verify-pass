@@ -106,8 +106,8 @@ handover per day, pickup is always free, and reading the verify
 endpoint costs no quota. The run in `RUN.md` spent 2 counted
 calls on the verifier's side (the two verdict records) and 2 counted
 calls plus a free wrap-up on the producer's side. Past free, the line
-is per agent: a Day Pass is $0.99 for one agent, unlimited for 24
-hours; the Zambo Pass is $29 for one agent for 30 days, $19 for
+is: a Day Pass is $0.99, unlimited for 24
+hours; the Zambo Pass is $29 for 30 days, $19 for
 30 days for $ZAMBO holders. A Lifetime Pass is $250, one payment.
 All are one-time payments, never subscriptions.
 
