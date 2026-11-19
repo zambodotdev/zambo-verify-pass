@@ -62,14 +62,13 @@ failure the verify pass exists to catch.
 
 ## Free-tier accounting
 
-Each identity has its own daily allowance, keyed to its caller handle.
+Metering is per network, not per handle or per identity. Free tier: Every tool free once a day, plus 3 continue calls. One free wrap-up handover per day, and pickup is always free.
 
 - Producer: 2 counted calls (live_price, memory_remember) plus its
   free daily wrap-up for the handover.
 - Verifier: 2 counted calls (the two verdict records). The pickup was
   free and the verify endpoint reads cost no quota.
-- Whole pass: 4 counted calls across two separate allowances, zero
-  paid calls.
+- Whole pass: 4 counted calls inside the shared per-network free allowance, zero paid calls.
 
 ## Verification
 
