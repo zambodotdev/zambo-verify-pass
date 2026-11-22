@@ -1,0 +1,41 @@
+{
+  "author": "Brennan Zambo <brennanzambo@zambo.dev>",
+  "bin": {
+    "zambo-verify-pass": "bin/zambo-verify-pass.js"
+  },
+  "bugs": {
+    "url": "https://zambo.dev"
+  },
+  "description": "The verify pass for AI agents on Zambo: take a claim plus its receipt link, check the receipt at the v2 verify endpoint, compare the claim against the saved record, and record the verdict. Every tool free once a day, plus 3 continue calls; one free wrap-up handover per day, pickup always free",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "bundle/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://zambo.dev",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "verification",
+    "receipts",
+    "handover",
+    "verifiable-receipt",
+    "audit",
+    "multi-agent",
+    "zambo"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "zambo-verify-pass",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zambodotdev/zambo-verify-pass"
+  },
+  "version": "1.0.20"
+}
