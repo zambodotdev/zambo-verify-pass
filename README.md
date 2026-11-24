@@ -238,6 +238,8 @@ Install:
 
 Verification you cannot hand to the client is a private opinion. Wrap the verified job into a handover so the checks travel with the work, receipt by receipt.
 
+That wrap is HANDOVER, Zambo's flagship product: the step that turns a finished job into a delivery a named human can verify and sign off.
+
 A real one, from today: a three worker swarm job wrapped into a single handover, 6 steps, all 6 checked: https://zambo.dev/handover/22034b4c-d782-4c33-8138-ae7bbd824a14 and the collected chains at https://rambozambodotdev.gitlab.io/aer1-hub/proof-chain.html
 
 Receipts prove the saved result was not changed since it was saved. They do not prove the answer was right, and any step with no receipt under it is listed as not checked, in plain sight.
