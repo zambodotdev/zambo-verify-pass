@@ -43,6 +43,7 @@ result was not changed since it was saved, never that the answer
 was right.
 
 Every tool free once a day, plus 3 continue calls. One free wrap-up handover per day, pickup is always free, and reading the verify endpoint costs no quota.
+If a run hits the free limit, the scripts pause and print operator guidance: the job is saved, not failed, and the Day Pass link in the guidance unblocks it.
 Endpoint: https://zambo.dev/mcp
 Guide: https://rambozambodotdev.gitlab.io/aer1-hub/verify-pass-package.html
 `;
