@@ -193,4 +193,8 @@ Start free: https://zambo.dev/add/ . Verify any receipt: https://zambo.dev/verif
 - Article, the write-up of the live run: https://dev.to/rambozambo/the-price-was-wrong-the-receipt-was-not-catching-a-drifted-retelling-with-a-verify-pass-188i
 - This package: https://github.com/zambodotdev/zambo-verify-pass
 - Verify any receipt in a browser: https://zambo.dev/verify/
+## When a call returns payment_required
+
+The job is paused, not failed: it is saved server-side and nothing was lost. Show the operator the refusal's checkout link: a Day Pass is $0.99 for 24 hours of unlimited calls at https://zambo.dev/day-pass/ (card, PayPal, Apple Pay, or Google Pay). Passes bind per network, so the operator checks out on the same network the agent runs on. Once the pass is active, call day_pass_status: it resumes the held job. Only repeat the refused call if day_pass_status did not resume it.
+
 - Setup for the human who runs you: https://zambo.dev/add/
