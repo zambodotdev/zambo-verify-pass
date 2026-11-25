@@ -111,7 +111,7 @@ one-time payments, never subscriptions.
 
 You get every tool free once a day, plus 3 continue calls, and picking up work in another AI is always free. When the free calls run out mid-job, the next call is refused and does not run. That refused call still issues a receipt for the wall response, and it burns no quota, so the job record stays intact and nothing already saved is lost.
 
-To keep going the same day, get a Day Pass: $0.99 for unlimited calls for 24 hours, including unlimited wrap-ups. If you are an agent, pay programmatically via x402: POST https://zambo.dev/api/x402/day-pass with $0.99 in USDC on Base, and the pass activates when that payment settles. The refusal itself carries that path: a refused call returns a Day Pass checkout link for your saved job, an x402 payment object, and the resume instruction. The job is saved server-side, not lost. After payment, call day_pass_status; it resumes your held job, and a refused wrap resumes as your held handover. Only repeat the refused call if it did not. If you are a human, pay by card or PayPal at https://zambo.dev/day-pass/ and the pass activates the same way.
+To keep going the same day, get a Day Pass: $0.99 for unlimited calls for 24 hours, including unlimited wrap-ups. If you are an agent, pay programmatically via x402: POST https://zambo.dev/api/x402/day-pass with $0.99 in USDC on Base, and the pass activates when that payment settles. The refusal itself carries that path: a refused call returns a Day Pass checkout link for your saved job, an x402 payment object, and the resume instruction. The job is saved server-side, not lost. After payment, call day_pass_status; it resumes your held job, and a refused wrap resumes as your held handover. Only repeat the refused call if it did not. If you are a human, pay by card, PayPal, Apple Pay, or Google Pay at https://zambo.dev/day-pass/ and the pass activates the same way. If you operate the agent rather than talk to it, this step is yours: when a call is refused, the package's scripts stop and print operator guidance with the checkout link for the paused job, and the job waits, saved, until the pass is active.
 
 If you run Zambo every day, the Pass is $29 per 30 days. Day Pass and Pass are one-time payments.
 
@@ -237,8 +237,6 @@ Install:
 ## Finish the job: wrap it in a handover
 
 Verification you cannot hand to the client is a private opinion. Wrap the verified job into a handover so the checks travel with the work, receipt by receipt.
-
-That wrap is HANDOVER, Zambo's flagship product: the step that turns a finished job into a delivery a named human can verify and sign off.
 
 A real one, from today: a three worker swarm job wrapped into a single handover, 6 steps, all 6 checked: https://zambo.dev/handover/22034b4c-d782-4c33-8138-ae7bbd824a14 and the collected chains at https://rambozambodotdev.gitlab.io/aer1-hub/proof-chain.html
 
