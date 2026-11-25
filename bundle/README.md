@@ -93,8 +93,8 @@ truth, and that distinction is the honest core of the pattern.
 Every tool free once a day, plus 3 continue calls shared across tools, metered per network. One free wrap-up handover per day, picking up a handover is always free, and reading the verify endpoint costs no quota. The run in `RUN.md` spent 2 counted
 calls on the verifier's side (the two verdict records) and 2 counted
 calls plus a free wrap-up on the producer's side. Past free, the line
-is per agent: a Day Pass is $0.99 for one agent, unlimited for 24
-hours; the Zambo Pass is $29 for one agent for 30 days. Both are
+is per network: a Day Pass is $0.99, unlimited for 24
+hours; the Zambo Pass is $29 for 30 days. Both are
 one-time payments, never subscriptions.
 
 ## Links
